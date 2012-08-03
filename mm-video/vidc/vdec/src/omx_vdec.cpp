@@ -65,6 +65,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #if defined (_ANDROID_ICS_)
 #include <genlock.h>
+#include <qdMetaData.h>
 #endif
 
 #ifdef _ANDROID_
@@ -4049,6 +4050,12 @@ OMX_ERRORTYPE  omx_vdec::use_output_buffer(
         drv_ctx.ptr_outputbuffer[i].bufferaddr = buff;
         drv_ctx.ptr_outputbuffer[i].mmaped_size =
             drv_ctx.ptr_outputbuffer[i].buffer_len = drv_ctx.op_buf.buffer_size;
+
+#if defined(_ANDROID_ICS_)
+        if (drv_ctx.interlace != VDEC_InterlaceFrameProgressive) {
+            setMetaData(handle, PP_PARAM_INTERLACED, 1);
+        }
+#endif
     } else
 #endif
 
