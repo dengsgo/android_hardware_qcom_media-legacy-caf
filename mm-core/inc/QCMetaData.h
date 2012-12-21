@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -62,6 +62,7 @@ enum {
 
     //Extractor sets this
     kKeyUseArbitraryMode     = 'ArbM',  //bool (int32_t)
+    kKeySmoothStreaming      = 'ESmS',  //bool (int32_t)
 
     kKeyMinBlkSize           = 'mibs', //int32_t
     kKeyMaxBlkSize           = 'mabs', //int32_t
