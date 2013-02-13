@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-Copyright (c) 2009-2012, Code Aurora Forum. All rights reserved.
+Copyright (c) 2009-2013, Code Aurora Forum. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -357,6 +357,9 @@ enum OMX_QCOM_EXTN_INDEXTYPE
     OMX_QcomIndexParamVideoMaxAllowedBitrateCheck = 0x7F00001E,
 
     OMX_QcomIndexEnableSliceDeliveryMode = 0x7F00001F,
+
+    /*"OMX.QCOM.index.param.video.EnableSmoothStreaming"*/
+    OMX_QcomIndexParamEnableSmoothStreaming = 0x7F000022,
 };
 
 /**
