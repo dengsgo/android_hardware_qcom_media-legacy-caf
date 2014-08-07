@@ -63,7 +63,6 @@ enum {
     //Extractor sets this
     kKeyUseArbitraryMode     = 'ArbM',  //bool (int32_t)
 
-    kKeySampleBits           = 'sbit', // int32_t (audio sample bit-width)
     kKeyMinBlkSize           = 'mibs', //int32_t
     kKeyMaxBlkSize           = 'mabs', //int32_t
     kKeyMinFrmSize           = 'mifs', //int32_t
